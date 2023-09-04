@@ -1,5 +1,5 @@
 h1 {
-color: #e6855e;
+color: #444;
 font-size: 30px;
 background-color:#f3f372;
 height:80px;
@@ -11,4 +11,7 @@ img{
 height:50px;
 width:70px;
 
+}
+.selected{
+  color: #ff0000;
 }
