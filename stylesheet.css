@@ -1,17 +1,137 @@
-h1 {
-color: #444;
-font-size: 30px;
-background-color:#f3f372;
-height:80px;
-width:200px;
+*,html{
+  margin: 0;
+  padding: 0;
 
 }
-
-img{
-height:50px;
-width:70px;
+body {
+  background-color:#333;
+  color: rgb(255, 241, 241);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: 400;
+  padding: 15;
+  height: 200vh;
+}
+.container-keseluruhan{
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.judul{
+  color: #ffffffed;
+  background-color: #000000;  
+  text-align: center;
+}
+.judul1{
+  color: rgb(42, 81, 113) ;
 
 }
-.selected{
-  color: #ff0000;
+.judul2 {
+  background-color: #333;
+  justify-content: right;
 }
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  height: ;
+}
+
+.warpper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  max-width: 800px;
+  height: 80px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand {
+display: flex;
+flex-direction: row;
+padding: 15px;
+font-size: 1.5em;
+}
+
+.firstname{
+  color: whiee;
+  font-weight: 700;
+}
+
+.secondname{
+  padding-left: 4px;
+  color: #d90d0d  ;
+  font-weight: 00;
+}
+.ul-1navbar {
+  height: 100px;
+  width:none;
+  display:flex ;
+  justify-content: right;
+  align-items: center;
+}
+.li-1navbar {
+  text-color: white;
+  background-color: #000000;
+  border: 1px solid white;
+  padding: 15px;
+  margin: 5px;
+  list-style-type: none;
+}
+.li-1navbar:hover {
+  background-color: #d90d0d;
+  transition: 0.3s ease-in-out;
+  border-radius: 9%;
+}
+.a-navbar {
+  color: white;
+  text-decoration-line: none;
+}
+
+.b-navbar{
+  align-items: left;
+  justify-content: left; 
+}
+
+.c-navbar{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;  
+  
+}
+
+.container-content {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100px
+  height:500px
+}
+
+
+.img1-content {
+  width: 300px;
+  padding: 5px;
+  height: auto;
+  border: 10px solid silver;
+  text-align: center; 
+  justify-content: left;
+  align-items: center;
+  }
+
+
+  .img2-content {
+  padding: 5px;
+  width: 300px;
+  height: auto ;
+  border: 10px solid silver;
+  }
+  .img3-content{
+  padding: 5px;
+  width: 300px;
+  height: 210px ;
+  border: 10px solid silver;
+  }
