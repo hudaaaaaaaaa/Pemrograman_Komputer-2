@@ -1,137 +1,61 @@
-*,html{
-  margin: 0;
-  padding: 0;
-
-}
 body {
-  background-color:#333;
-  color: rgb(255, 241, 241);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: 400;
-  padding: 15;
-  height: 200vh;
-}
-.container-keseluruhan{
-  max-width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.judul{
-  color: #ffffffed;
-  background-color: #000000;  
-  text-align: center;
-}
-.judul1{
-  color: rgb(42, 81, 113) ;
-
-}
-.judul2 {
-  background-color: #333;
-  justify-content: right;
-}
-.navbar {
-  background-color: #333;
-  padding: 10px;
-  height: ;
+  font-family: "Avenir Next";
 }
 
-.warpper{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 15px;
-  max-width: 800px;
-  height: 80px;
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
+li {
+  list-style: none;
 }
 
-.brand {
-display: flex;
-flex-direction: row;
-padding: 15px;
-font-size: 1.5em;
+.header {
+  background-color: #8B0000;
+  color: #fff;
+  height: 90px;
 }
 
-.firstname{
-  color: whiee;
-  font-weight: 700;
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
 }
 
-.secondname{
-  padding-left: 4px;
-  color: #d90d0d  ;
-  font-weight: 00;
+.header-list li {
+  float: left;
+  padding: 33px 20px;
 }
-.ul-1navbar {
-  height: 100px;
-  width:none;
-  display:flex ;
-  justify-content: right;
-  align-items: center;
-}
-.li-1navbar {
-  text-color: white;
-  background-color: #000000;
-  border: 1px solid white;
-  padding: 15px;
-  margin: 5px;
-  list-style-type: none;
-}
-.li-1navbar:hover {
-  background-color: #d90d0d;
-  transition: 0.3s ease-in-out;
-  border-radius: 9%;
-}
-.a-navbar {
-  color: white;
-  text-decoration-line: none;
-}
-
-.b-navbar{
-  align-items: left;
-  justify-content: left; 
-}
-
-.c-navbar{
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;  
   
+.main {
+  background-color: #FF8C00;
+  padding: 100px 80px;
 }
 
-.container-content {
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  width: 100px
-  height:500px
+.copy-container h1 {
+  font-size: 140px;
 }
 
+.copy-container h2 {
+  font-size: 60px;
+}
 
-.img1-content {
-  width: 300px;
-  padding: 5px;
-  height: auto;
-  border: 10px solid silver;
-  text-align: center; 
-  justify-content: left;
-  align-items: center;
-  }
+.copy-container span {
+  color: #ff4a4a;
+}
 
+.footer {
+  background-color: #0000FF;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
 
-  .img2-content {
-  padding: 5px;
-  width: 300px;
-  height: auto ;
-  border: 10px solid silver;
-  }
-  .img3-content{
-  padding: 5px;
-  width: 300px;
-  height: 210px ;
-  border: 10px solid silver;
-  }
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
