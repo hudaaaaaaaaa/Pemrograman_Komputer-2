@@ -32,7 +32,7 @@ header {
   background-color: #0f2c59;
   color: #eadbc8;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
 }
