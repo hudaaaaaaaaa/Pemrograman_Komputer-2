@@ -1,3 +1,11 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
 body {
   font-family: "Avenir Next";
 }
@@ -6,9 +14,137 @@ li {
   list-style: none;
 }
 
-.header {
-  background-color: #8B0000;
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+/* start navbar */
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0f2c59;
+  color: #eadbc8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  left: -7px;
+  top: -4px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.menu-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-list a {
+  text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f5812f;
+}
+/* end navbar */
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.top-wrapper {
+  padding: 180px 0 0 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  color: white;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.header {
+  background-color: #183d3d;
+  color: #f4f4f4;
   height: 90px;
 }
 
@@ -22,40 +158,164 @@ li {
   float: left;
   padding: 33px 20px;
 }
-  
+
 .main {
-  background-color: #FF8C00;
-  padding: 100px 80px;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  color: #f4f4f4;
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+  background-color: #5c8374;
+  padding: 100px 100px;
+}
+
+.main h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 .copy-container h1 {
   font-size: 140px;
+  color: #f4f4f4;
 }
 
 .copy-container h2 {
   font-size: 60px;
+  color: #5c8374;
 }
 
 .copy-container span {
   color: #ff4a4a;
 }
 
-.footer {
-  background-color: #0000FF;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
+.contents {
+  height: 500px;
+  margin-top: 100px;
 }
 
-.footer-logo {
+.contents h3 {
+  font-size: 52px;
+}
+
+.section-title {
+  border-bottom: 2px solid #5c8374;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
   float: left;
+  margin-right: 40px;
+  color: #f4f4f4;
+}
+
+.contents-item p {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.contact-form {
   font-size: 32px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.footer-list {
-  float: right;
+.contact-form h3 {
+  font-size: 52px;
+}
+.contact-form span {
+  color: #ff4a4a;
 }
 
-.footer-list li {
-  padding-bottom: 20px;
+input,
+textarea {
+  width: 400px;
+  margin-top: 1px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #5c8374;
+}
+
+.contact-submit {
+  font-size: 20px;
+  background-color: #5c8374;
+  color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #183d3d;
+}
+
+/* start footer */
+footer {
+  background-color: #0f2c59;
+  color: rgb(253, 221, 166);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.address {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.navbar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navbar-button a {
+  color: #ffdfdf;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #f1f4f8;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-button a:hover {
+  background-color: rgb(253, 221, 166);
+  color: #fff;
+}
+/* end footer */
+
+/* responsif */
+@media screen and (max-width: 768px) {
+  nav {
+    margin-right: 10px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 999;
+    background-color: #0f2c59;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  .navbar ul.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
