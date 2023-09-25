@@ -100,6 +100,7 @@ nav a:hover {
   background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
+  align-items: center;
 }
 
 .top-wrapper h1 {
